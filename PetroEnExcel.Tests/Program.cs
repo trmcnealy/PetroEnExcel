@@ -101,7 +101,7 @@ namespace PetroEnExcel.Tests
 
                 Console.WriteLine($"muGas={muGas,-10:N8}, NRe={NRe,-10:N2}, ff={ff,-10:N8}");
 
-                double Pbhp = GasPipeFriction(sGGas, MD, TubingInnerDiameter, flowingWHPressure, qGas, ff, avgT_R);
+                double Pbhp = GasSinglePhaseBHFP(sGGas, MD, TubingInnerDiameter, flowingWHPressure, qGas, ff, avgT_R);
 
                 Console.WriteLine($"avgT={avgT_R,-10:N8}, Gas Pbhp={Pbhp,-10:N8}");
             }
